@@ -7,13 +7,13 @@
 <meta name="author" content="Michael Weinberg" />
 
 <meta name="viewport" content="width=device-width; initial-scale=1.0" /> <link
-href="css/bootstrap.css" rel="stylesheet" /> <link href="css/custom.css" rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /> <link href="css/custom.css" rel="stylesheet"
 />
 
 
-<link rel="stylesheet" href="css/CoverPop.css">
+<link rel="stylesheet" href="http://www.michaelweinberg.net/css/CoverPop.css">
 
-<link rel="stylesheet" href="css/animate.css"> 
+<link rel="stylesheet" href="http://www.michaelweinberg.net/css/animate.css"> 
 
 </head>
 
@@ -180,10 +180,10 @@ src="images/kitten1.jpg"/><br/>KITTENS!</div>
 
 </div> </div>
 
-<script src="js/jquery.js"></script>
+<script src="http://www.michaelweinberg.net/js/jquery.js"></script>
 
-<script> $(document).ready(function() { $('#page-wrap').delay(500).fadeIn(1000);
-$('#hello').delay(1600).fadeOut(1000);
+<!-- <script> $(document).ready(function() { $('#page-wrap').delay(500).fadeIn(1000);
+$('#hello').fadeOut(1000);
 
 $('#welcome').delay(2700).fadeIn(1000);
 
@@ -191,10 +191,60 @@ $('#featuring').delay(4800).fadeIn(1000); $('#slider').delay(7000).fadeIn(1000);
 
 
 
-}); </script>
+}); </script> -->
+
+<script type="text/javascript">
+			function firstFunction(){
+				  var d = $.Deferred();
+				  // some very time consuming asynchronous code...
+				
+				   $('#page-wrap').fadeIn(1000);
+				    d.resolve();
+				  
+				  return d.promise();
+				}
+				function thirdFunction(){
+				  var d = $.Deferred();
+				  // definitely dont wanna do this until secondFunction is finished
+				 
+				 $('#welcome').fadeIn(1000);
+				    d.resolve();
+				
+				  return d.promise();
+				}
+				function secondFunction(){
+				  var d = $.Deferred();
+				   
+				   $('#hello').fadeOut(1000);
+				    d.resolve();
+				
+				  return d.promise();
+				}
+				function fourthFunction(){
+				  var d = $.Deferred();
+				  // last function, not executed until the other 3 are done.
+				
+				  $('#featuring').fadeIn(1000); 
+				    d.resolve();
+				
+				  return d.promise();
+				}
+				
+				function fifthFunction(){
+				  var d = $.Deferred();
+				  // last function, not executed until the other 3 are done.
+			
+				$('#slider').fadeIn(1000);
+				    d.resolve();
+				
+				  return d.promise();
+				}
+				
+				firstFunction().pipe(secondFunction).pipe(thirdFunction).pipe(fourthFunction).pipe(fifthFunction);
+		</script>
 
 
- <script src="js/cycle.js"></script>
+ <script src="http://www.michaelweinberg.net/js/cycle.js"></script>
 <script type="text/javascript">
 
 $(function() { $('a[href*=#]:not([href=#])').click(function() { if
@@ -212,5 +262,5 @@ $('html,body').animate({ scrollTop: target.offset().top }, 500); return false; }
 
 
 
-<script src="js/CoverPop.js"></script> <script> CoverPop.start({ expires:1 }); </script>
+<script src="http://www.michaelweinberg.net/js/CoverPop.js"></script> <script> CoverPop.start({ expires:1 }); </script>
 </div> </body> </html>
