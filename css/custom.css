@@ -38,16 +38,17 @@ background-color:#F0F0F0;
   	background-color:red;
   	z-index:5;
   	width:100%;
-  	font-family: HelvCondensedBlk,Arial,Helvetica,Verdana,sans-serif;
+  	font-family: 'Roboto Condensed', sans-serif;
+  	font-weight:bold;
   }
   
   
   .topNavItem{
   	display:inline-block;
   	line-height:100px;
-  width:200px;
+  
   	text-align:center;
-  	margin-top:-10px;
+  	
   }
   
   .topNavItem:hover{
@@ -162,6 +163,18 @@ font-size:50px;
 	background-color:#fff;
 	width:500px;
 	margin:100px auto;
+	-webkit-border-top-left-radius: 34px;
+	-webkit-border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 90px;
+	-moz-border-radius-topleft: 34px;
+	-moz-border-radius-topright: 2px;
+	-moz-border-radius-bottomright: 15px;
+	-moz-border-radius-bottomleft: 90px;
+	border-top-left-radius: 34px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 90px;
 	position:relative;
 }
 
