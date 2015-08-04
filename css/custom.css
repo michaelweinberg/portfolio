@@ -232,8 +232,6 @@ font-size:50px;
 
 .rotatorText{
 	line-height:100px;
-	
-	
 }
 
 .rotatorImg{
@@ -243,4 +241,8 @@ font-size:50px;
 
 .test{
 font-size:50px;
+}
+
+.siteLink{
+	font-size:30px;
 }

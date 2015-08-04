@@ -74,7 +74,7 @@ href="MichaelWeinbergResume.pdf" target="_blank">Download Resume (.pdf)</a></p> 
 
 <h3>Industrial Revolution - Tukwila, WA</h3>
 
-<h4>Specific Site Work</h4> <p><h5><a href="http://www.industrialrev.com" target="_blank">industrialrev.com</a></h5>
+<h4>Specific Site Work</h4> <p><h5 class="siteLink"><a href="http://www.industrialrev.com" target="_blank">industrialrev.com</a></h5>
 
 <ul><li>Regular Site Maintenance January 2013-present.</li><ul><li>Regular website software
 upgrades.</li><li>New pages builds.</li><li>Custom JavaScript authoring.</li><li>Custom
@@ -175,7 +175,7 @@ src="http://www.michaelweinberg.net/images/kitten1.jpg"/><br/>KITTENS!</div>
 
 
 
-</div> <a class="CoverPop-close skip" href="#">Skip this nonsense</a> </div>
+</div> <a class="CoverPop-close skip" href="#">Skip</a> </div>
 
 </div> </div>
 
@@ -193,11 +193,20 @@ $('#featuring').delay(4800).fadeIn(1000); $('#slider').delay(7000).fadeIn(1000);
 
 }); </script> -->
 
+ <script src="http://www.michaelweinberg.net/js/cycle.js"></script>
 <script type="text/javascript">
-			function firstFunction(){
+
+
+
+$(function() { $('a[href*=#]:not([href=#])').click(function() { if
+(location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') &&
+location.hostname == this.hostname) { var target = $(this.hash); target = target.length ?
+target : $('[name=' + this.hash.slice(1) +']'); if (target.length) {
+$('html,body').animate({ scrollTop: target.offset().top }, 500); return false; } } }); });
+
+
+	function firstFunction(){
 				  var d = $.Deferred();
-				  // some very time consuming asynchronous code...
-				
 				   $('#page-wrap').fadeIn(1000);
 				    d.resolve();
 				  
@@ -228,7 +237,7 @@ $('#featuring').delay(4800).fadeIn(1000); $('#slider').delay(7000).fadeIn(1000);
 				    d.resolve();
 				
 				  return d.promise();
-   }, 4000);
+   				}, 4000);
 				}
 				
 				function fifthFunction(){
@@ -241,18 +250,6 @@ $('#featuring').delay(4800).fadeIn(1000); $('#slider').delay(7000).fadeIn(1000);
 				}
 				
 				firstFunction().pipe(secondFunction).pipe(thirdFunction).pipe(fourthFunction).pipe(fifthFunction);
-		</script>
-
-
- <script src="http://www.michaelweinberg.net/js/cycle.js"></script>
-<script type="text/javascript">
-
-$(function() { $('a[href*=#]:not([href=#])').click(function() { if
-(location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') &&
-location.hostname == this.hostname) { var target = $(this.hash); target = target.length ?
-target : $('[name=' + this.hash.slice(1) +']'); if (target.length) {
-$('html,body').animate({ scrollTop: target.offset().top }, 500); return false; } } }); });
-
 
 </script>
 
