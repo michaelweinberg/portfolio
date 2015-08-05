@@ -144,7 +144,7 @@ font-size:50px;
 .inner{
 	height:400px;	
 	background-color:#fff;
-	width:40%;
+	width:400px;
 	margin:100px auto;
 	-webkit-border-top-left-radius: 34px;
 	-webkit-border-top-right-radius: 2px;
@@ -249,9 +249,15 @@ margin-bottom:10px;
 	padding-left:0;
 }
 
+@media all and (max-width:992px){
+  }
+
 
 @media all and (max-width:768px){
 	.topNavItem{
 		line-height:45px;
 	}
+  .inner{
+  width:80%;
+}
 }
