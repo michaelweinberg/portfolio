@@ -1,30 +1,9 @@
-
-
-
-
-@font-face
-{
-font-family: HelvCondensedBlk;
-src: url(../fonts/HelveticaNeueLTPro_Blk.otf);
-}
-
-@font-face
-{
-font-family: HelvCondensedPro;
-src: url(../fonts/HelveticaNeueLTPro_Cn.otf);
-}
-
-@font-face
-{
-font-family: HelvCondensedStd;
-src: url(../fonts/HelveticaNeueLTStd-Cn.otf);
-}
-
+@import url(http://fonts.googleapis.com/css?family=Hind:400,700,500);
 
 body{
 font-size:14px;
 background-color:#F0F0F0;
-
+font-family: Hind, sans-serif;
 }
 
   p{
@@ -35,7 +14,8 @@ background-color:#F0F0F0;
   header{
   	height:100px;
   	position:fixed;
-  	background-color:red;
+  	background: linear-gradient(red, #fff);
+	opacity:.9;
   	z-index:5;
   	width:100%;
   	font-family: 'Roboto Condensed', sans-serif;
@@ -46,9 +26,7 @@ background-color:#F0F0F0;
   .topNavItem{
   	display:inline-block;
   	line-height:100px;
-  
-  	text-align:center;
-  	
+  	text-align:center; 	
   }
   
   .topNavItem:hover{
@@ -56,8 +34,12 @@ background-color:#F0F0F0;
   	
   }
   
-  #bio, #work,  #resume{
+  #bio,#resume{
   	height:100px;
+  }
+  
+  #work,#education,#skills{
+  	height:50px;
   }
   .bottomBuffer
  {
@@ -72,6 +54,7 @@ background-color:#F0F0F0;
   	background-color:#BFBFBF;
   	height:auto;
   	width:100%;
+  	padding-bottom:50px;
   }
   
   .mike{
@@ -80,7 +63,7 @@ background-color:#F0F0F0;
   }
   
   .topNav{
-  	width:auto;
+  	width:100%;
   	float:right;
   }
   
@@ -146,7 +129,7 @@ font-size:50px;
   	}
   	
  .evenContent{
- 	padding-bottom:100px;
+ 	padding-bottom:50px;
  } 	
   	
   	.slide img{
@@ -240,6 +223,35 @@ font-size:50px;
 font-size:50px;
 }
 
-.siteLink{
-	font-size:24px;
+
+
+.skillSet{
+	float:left;
+	margin:0 3em 2em 0;
+	height:150px;
+	width:175px;
+}
+
+.skillSet li{
+	margin-left:20px;
+}
+
+.degree{
+	font-size:20px;
+}
+
+.ed-block:first-child{
+margin-right:20px;
+margin-bottom:10px;
+}
+
+.no-left-padding{
+	padding-left:0;
+}
+
+
+@media all and (max-width:768px){
+	.topNavItem{
+		line-height:45px;
+	}
 }
