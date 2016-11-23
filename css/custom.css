@@ -14,8 +14,9 @@ font-family: Hind, sans-serif;
   header{
   	height:100px;
   	position:fixed;
-  	background: linear-gradient(red, #fff);
-	opacity:.9;
+    background-color:red;
+  	/*background: linear-gradient(red, #fff);*/
+	/*opacity:.9;*/
   	z-index:5;
   	width:100%;
   	font-family: 'Roboto Condensed', sans-serif;
